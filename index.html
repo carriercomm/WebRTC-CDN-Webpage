@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>	
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jerry Online Classroom</title>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js" ></script>
+<script type="text/javascript" src="js/bootbox.min.js"></script>
+<script type="text/javascript" src="js/spin.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
+<link rel="stylesheet" href="css/custom-joc.css" type="text/css"/>
+<script type="text/javascript" src="js/custom-joc.js" ></script>
+<script type="text/javascript" src="js/janus.js" ></script>
+<script type="text/javascript" src="videomcubroadcast.js"></script>
+
+</head>
+
+<body>
+	<div id="layout01"></div>
+	<div id="layoutvideo01" >
+		<video id="videoTeacher" control autoplay/>
+	</div>
+	<div id="userNameDIV"></div>
+	<div id="layoutvideo02">
+		<video id="videoStudnet" control autoplay/>
+	</div>
+	<div id="layoutbroadcast01"></div>
+	<div id="broadcastDIV"></div>
+	<div id="layoutquestion01">
+	</div>
+	<div id="btn01" class="btn"></div>
+	<div id="btn02" class="btn"></div>
+	<div id="btn03" class="btn"></div>
+	<div id="layoutline01">
+		<div id="questionListDIV">
+			<ul id="questionListUL"  data-role="listview" class="list-group">
+			</ul>
+		</div>
+	</div>
+	
+	<div id="btn04" class="btn hide" onclick="doHangup()"></div>
+</body>
+</html>

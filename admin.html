@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Janus WebRTC Gateway: Admin/Monitor</title>
+<script type="text/javascript" src="jquery.min.js" ></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootbox.min.js"></script>
+<script type="text/javascript" src="admin.js"></script>
+<link rel="stylesheet" href="css/cerulean/bootstrap.css" type="text/css"/>
+</head>
+<body style= "background-color: #DEDEBE">
+
+<div class="container">
+	<!--
+	<div class="row">
+		<div class="col-md-12">
+			<form class="form-inline">
+				<div class="form-group col-md-12">
+					<input type="text" class="form-control" id="roomId" placeholder="room id">
+				</div>
+				<button class="btn btn-primary  col-md-6"  id="close" onclick="closeRoomById()">close specific room</button>
+			</form>
+		</div>
+	</div>
+	-->
+	<h3>Admin only</h3>
+	<input placeholder="room id" id="roomId" class="form-control"></input>
+	<br>
+	<button id="close" class="btn btn-default" onclick="closeRoomById()">close specific room</button>
+	<button id="closeall" class="btn btn-default" onclick="closeAllEmptyRoom()">close all empty room</button>
+	<button id="showall" class="btn btn-default" onclick="showAllRoom()">show all room</button><br/>
+	<br/>
+	<h4>Console:</h4>
+	<div id="adminResult" class="panel" sytle= "height : 50px; "></div><br/>
+	<hr style="border: 0; height: 3px;  background: #FFF; background-image: linear-gradient(to right, #FFF, #FFF, #FFF);">
+
+	<div class="row">
+		<div class="col-md-12">
+			<div id="sessions" class="col-md-2">
+				<h4>Sessions (<span id="sessions-num">0</span>) <i id="update-sessions" class="fa fa-refresh" title="Update list of sessions" style="cursor: pointer;"></i></h4>
+				<div id="sessions-list" class="list-group">
+				</div>
+			</div>
+			<div id="handles" class="col-md-2">
+				<h4>Handles (<span id="handles-num"></span>) <i id="update-handles" class="fa fa-refresh" title="Update list of handles" style="cursor: pointer;"></i></h4>
+				<div id="handles-list" class="list-group">
+				</div>
+			</div>
+			<div id="info" class="col-md-8">
+				<h4>Handle Info <i id="update-handle" class="fa fa-refresh" title="Update handle info" style="cursor: pointer;"></i></h4>
+				<pre id="handle-info"></pre>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

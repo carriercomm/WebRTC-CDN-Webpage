@@ -1,0 +1,106 @@
+body {
+	background: url("/image/background.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body {
+	width: 100%;
+	height: 100%;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+ul li{
+	display:block;
+}
+
+ul li:hover, ul li:focus {
+	background-color:#DCDCDC;
+}
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+
+#layout01 {
+	position: absolute;
+	background-color: #c5c6c6;
+}
+#layoutvideo01 {
+	position: absolute;
+	background-color: #000000;
+}
+#userNameDIV {
+	position: absolute;
+	color : #FFFFFF;
+}
+#layoutchat01 {
+	position: absolute;
+	background: url("/image/bgchat.jpg") no-repeat ; 
+	background-size:100% 100%;
+}
+#layoutrule01 {
+	position: absolute;
+	background: url("/image/bgrule.jpg") no-repeat ; 
+	background-size: 100% 100%;
+}
+#layoutvideo02 {
+	position: absolute;
+	background: url("/image/bgvideo02.jpg") no-repeat ; 
+	background-size: 100% 100%;
+}
+#layoutbroadcast01 {
+	position: absolute;
+	background: url("/image/bgbroadcast.jpg") no-repeat ; 
+	background-size: 100% 100%;
+}
+#broadcastDIV {
+	position: absolute;
+	background-size: 100% 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#layoutquestion01 {
+	position: absolute;
+}
+
+#btn01 {
+	position: absolute;
+	background: url("/image/bgbtn01.jpg") no-repeat ; 
+	background-size: 100% 100%;
+}
+
+#btn02 {
+	position: absolute;
+	background: url("/image/bgbtn02.jpg") no-repeat ; 
+	background-size: 100% 100%;
+}
+
+#btn03 {
+	position: absolute;
+	background: url("/image/bgbtn03.jpg") no-repeat ; 
+	background-size: 100% 100%;
+}
+
+#layoutline01 {
+	position: absolute;
+	background: url("/image/bgline.jpg") no-repeat ; 
+	background-size: 100% 100%;
+}
+
+#btn04 {
+	position: absolute;
+	background: url("/image/bgbtn04.jpg") no-repeat ;
+	background-size: 100% 100%;
+}
+
+#questionListDIV {
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
